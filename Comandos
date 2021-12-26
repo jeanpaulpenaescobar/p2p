@@ -4,7 +4,7 @@ reboot
 
 sudo su
 
-chmod 700 ./shaper.sh && /bin/bash ./shaper.sh&&touch Dockerfile&&curl https://raw.githubusercontent.com/johneramirez/p2p/master/Dockerfile > Dockerfile&&docker build -t uam:latest .
+chmod 700 ./shaper.sh && /bin/bash ./shaper.sh&&touch Dockerfile&&curl https://raw.githubusercontent.com/jeanpaulpenaescobar/p2p/master/Dockerfile > Dockerfile&&docker build -t uam:latest .
 
 docker run -d --restart always --cap-add=IPC_LOCK uam:latest
 
